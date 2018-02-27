@@ -1,15 +1,22 @@
-import random
+## Foreward
+# I heard this riddle and its solution, but I couldn't believe the answer.
+# To prove to myself that the given solution was correct, I quickly modeled the riddle in this script.
+# By simulating this riddle 1000 times, I verified the given solution was correct.
 
 ## Riddle
-# 100 passengers get onto a plane with 100 seats:
+# 100 passengers get onto a plane with 100 assigned seats:
 #  The first passenger takes a random seat
 #  Each passenger after that takes their assigned seat
 #   (Unless that seat is taken, where they take a random empty seat)
 # What is the probability that the last passenger gets their assigned seat?
 
-## Answer
-# 50:50 since whenever someone is taking a random open seat,
-# there is an equal chance they take seat 1 or 100 which determines the outcome
+## Given Answer
+# 50:50 since whenever someone is taking a random open seat:
+#  there is an equal chance they take seat 1 or 100 which determines the outcome
+
+# Author Nathaniel Burbine
+
+import random
 
 class Passenger:
     def __init__(self, seat):
